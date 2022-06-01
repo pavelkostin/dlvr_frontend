@@ -1,0 +1,224 @@
+.header {
+    max-width: 100%;
+    min-width: 320px;
+    padding: 18px 0;
+}
+
+.header-wrapper {
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    width: 50px;
+    height: 50px;
+    background-image: url(../../images/logo.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 0 0 -5px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.header-logo:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .header-logo  {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 45px;
+        height: 45px;
+        background-color: transparent;
+    }
+}
+
+.header-container {
+    display: flex;
+    
+}
+
+.header-contacts-item {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: grey;
+    z-index: 1;
+    font-weight: 400;
+    align-self: center;
+    font-size: 18px;
+    line-height: 18px;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.header-contacts-item:hover {
+    cursor: pointer;
+}
+
+.header-contacts-item:nth-of-type(2) {
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .header-contacts-item_hidden {
+        visibility: hidden;
+    }
+}
+
+.header-contacts {
+    transition: opacity 0.3s ease-in-out;
+    margin: 0;
+    background-color: grey;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    font-weight: 700;
+    align-self: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 5px 5px;
+    border-radius: 10px;
+    
+}
+
+.header-contacts-phone {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-contacts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0 20px;
+}
+
+.li_drop {
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header-contacts-container__submenu {
+    list-style: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: grey;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 45px;
+    position: absolute;
+    top: -2px;
+    right: 10px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.header-contacts-container li:hover
+.header-contacts-container__submenu {visibility: visible;}
+
+.header-contacts:nth-of-type(2) {
+    margin-right: 0;
+}
+
+.header-contacts:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .header-contacts  {
+        background-image: url(../../images/burger_white.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 35px;
+        height: 35px;
+        color: white;
+        background-color:transparent;
+        border: none;
+        background-color: grey;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-contacts-phone  {
+        background-image: url(../../images/phone1.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 14px;
+        height: 14px;
+        color: white;
+        background-color:transparent;
+    }
+}
+
+.header-contacts-img {
+    width: 20px;
+    height: 20px;
+    margin-right: 0;
+    border: none;
+    outline: none;
+
+    color: white;
+    background-color: grey;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.header-contacts-img_phone {
+    width: 28px;
+    height: 28px;
+}
+
+.header-contacts-img_phone:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .header-contacts-img_hidden {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-contacts_hidden {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 0) {
+    .header-contacts_visible {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .header-contacts_visible {
+        display: none;
+    }
+}

@@ -1,0 +1,38 @@
+.promo-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+}
+
+.promo-item__img{
+    max-width: 100%;
+    max-height: 80%;
+    align-self: center;
+}
+
+.promo-item__img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.promo-item__h3 {
+    margin-top: 5px;
+    color: grey;
+    font-weight: 400;
+    align-self: left;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.promo-item__para {
+    margin: 0;
+    font-weight: 400;
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: grey;
+
+    text-decoration: none;
+}

@@ -1,13 +1,22 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url(./vendor/normalize.css);
+@import url(./vendor/fonts/inter.css);
+@import url(./vendor/fonts/Montserrat.css);
+@import url(./components/App/App.css);
+@import url(./components/Header/Header.css);
+@import url(./components/Carousel/Carousel.css);
+@import url(./components/Info/Info.css);
+@import url(./components/Nav/Nav.css);
+@import url(./components/Search/Search.css);
+@import url(./components/Categories/Categories.css);
+@import url(./components/Categories/Category/Category.css);
+@import url(./components/Footer/Footer.css);
+@import url(./components/Cart/Cart.css);
+@import url(./components/Popup/Popup.css);
+@import url(./components/AboutUs/AboutUs.css);
+@import url(./components/Gifts/Gifts.css);
+@import url(./components/Promo/Promo.css);
+@import url(./components/Promo/PromoItem/PromoItem.css);
+@import url(./components/Promo/PromoItemPage/PromoItemPage.css);
+@import url(./components/Promo/PromoItemPage/PromoContent/PromoContent.css);
+@import url(./components/Delivery/Delivery.css);
+@import url(./components/CartPage/CartPage.css);

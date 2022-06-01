@@ -1,0 +1,30 @@
+.cart-fixed {
+    margin: 0;
+    position: fixed;
+    top: 90%;
+    right: 20px;
+
+    
+    padding: 15px;
+    border-radius: 50px;
+    background-color: grey;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 2px solid white;
+}
+
+.cart-fixed__img {
+    width: 60px;
+    height: 60px;
+}
+
+@media screen and (max-width: 768px) {
+    .cart-fixed, .cart-fixed__img {
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,35 @@
+
+.promo-item-page {
+    max-width: 100%;
+    min-width: 320px;
+}
+
+.promo-item-page__wrapper {
+    max-width: 900px;
+    min-width: 320px;
+    margin: 10px auto 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.promo-item__img_page{
+    max-width: 100%;
+    max-height: 80%;
+    align-self: center;
+}
+
+.promo-item-page__button {
+    text-decoration: none;
+    display: flex;
+    color: white;
+    background-color: grey;
+    border-radius: 2px;
+    padding: 3px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.promo-item-page__button:hover {
+    opacity: 0.6;
+}

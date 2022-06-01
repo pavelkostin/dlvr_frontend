@@ -1,0 +1,20 @@
+.popup {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    /* bottom: 0; */
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    background-color: grey;
+    color: #fff;
+    transform: translateX(-280px);
+    transition: transform .2s ease;
+}
+
+.popup_visible {
+    transform: translateX(0px);
+}

@@ -1,0 +1,133 @@
+.nav {
+    max-width: 100%;
+    min-width: 320px;
+}
+
+.nav__container {
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 0;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+    .nav__container {
+        margin: 20px auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav__container {
+        margin: 10px auto;
+    }
+}
+
+
+.nav__cats-container {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin-right: 50px;
+    padding: 0;
+}
+
+@media screen and (max-width: 700px) {
+    .nav__cats-container {
+        margin: 0;
+        /* width: 100%; */
+        /* column-gap: 3px; */
+    }
+}
+
+.nav__cat {
+    display: flex;
+    
+    height: 20px;
+    font-weight: 400;
+    align-self: center;
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    margin-right: 10px;
+    padding: 0;
+    padding-bottom: 0;
+    transition: opacity 0.3s ease-in-out;
+    color: grey;
+
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .nav__cat {
+        font-size: 12px;
+        margin-right: 10px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .nav__cat {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 370px) {
+    .nav__cat {
+        font-size: 8px;
+    }
+}
+
+.nav__cat_active {
+    border-bottom: 2px solid grey;
+}
+
+.nav__cat:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.nav__cat-cart {
+    display: flex;
+    background-color: grey;
+    padding: 5px 5px;
+    align-self: center;
+    align-items: center;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    transition: opacity 0.3s ease-in-out;
+    height: 40px;
+    border: 2px solid grey;
+    text-decoration: none;
+}
+
+.nav__cat-cart:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.nav__nav__cat-cart-img {
+    margin-right: 15px;
+    align-self: center;
+}
+
+.nav__cat-cart-para {
+    color: white;
+    margin: 0;
+    
+    font-weight: 400;
+    align-self: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 700px) {
+    .nav__cat-cart {
+        display: none;
+    }
+}
+
+
