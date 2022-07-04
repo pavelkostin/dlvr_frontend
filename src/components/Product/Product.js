@@ -1,13 +1,30 @@
 import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
 function Product({ product, setProduct, addToCart }) {
 
+    const [clicked, setClicked] = useState(false);
     const b = JSON.parse(localStorage.getItem('product'));
+
+    useEffect(() => {
+        const a = localStorage.getItem('cartList');
+        const c = JSON.parse(a);
+        const d = c.some(element => element._id === product._id);
+        setClicked(d);
+    }, [product._id])
+
+    function checkCart() {
+        const a = localStorage.getItem('cartList');
+        const c = JSON.parse(a)
+        const d = c.some(element => element._id === product._id);
+        setClicked(d);
+    }
 
     function onAddToCart() {
         addToCart(product);
+        setClicked(true);
+        checkCart();
     }
-
 
     return (
         <>
@@ -29,7 +46,9 @@ function Product({ product, setProduct, addToCart }) {
                     <div className='promo-item__para_black-bold'>{product.prize} ₽</div>
                     <button
                         className='promo-item__btn'
-                        onClick={() => { onAddToCart() }}>в корзину
+                        onClick={() => { onAddToCart() }}>
+                            
+                            {`${clicked ? 'в корзине' : 'в корзину'}`}
                     </button>
                 </div>
 
