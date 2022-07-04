@@ -1,7 +1,8 @@
 import {CategoriesList} from '../../assets/vars';
 import Category from './Category/Category';
 
-function Categories() {
+
+function Categories({itemsCounter}) {
     return (
         <div className='categories'>
             <ul className='categories-list'>
@@ -11,10 +12,12 @@ function Categories() {
                             key={item._id}
                             item={item}
                         />
+                        
                     )
-
+                    
                 })}
             </ul>
+            
         </div>
     )
 }

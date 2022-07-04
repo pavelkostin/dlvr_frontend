@@ -2,6 +2,8 @@
 .promo-item-page {
     max-width: 100%;
     min-width: 320px;
+
+    position: relative;
 }
 
 .promo-item-page__wrapper {
@@ -12,12 +14,25 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+
+    
 }
 
-.promo-item__img_page{
+.promo-item-page__container {
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
-    max-height: 80%;
-    align-self: center;
+
+    
+
+}
+
+.promo-item__img_page {
+    max-width: 100%;
+    max-height: 100%;
+    align-self: flex-start;
+
+    z-index: 1;
 }
 
 .promo-item-page__button {
@@ -32,4 +47,10 @@
 
 .promo-item-page__button:hover {
     opacity: 0.6;
+}
+
+.promo-item__btn_ppage {
+    /* margin-top: 10px; */
+    font-size: 16px;
+
 }

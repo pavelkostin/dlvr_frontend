@@ -2,11 +2,8 @@ import React from 'react';
 import { PromoList } from '../../assets/vars';
 import PromoItem from '../Promo/PromoItem/PromoItem';
 
-
-function Promo({setPromo}) {
-
+function Promo({ setPromo }) {
     return (
-        
         <div className='promo'>
             <div className='promo__wrapper'>
                 <ul className='categories-list_promo'>
@@ -16,14 +13,13 @@ function Promo({setPromo}) {
                                 key={item._id}
                                 item={item}
                                 setPromo={setPromo}
+                                
                             />
                         )
                     })}
                 </ul>
             </div>
-
         </div>
-        
     )
 }
 

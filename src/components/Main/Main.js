@@ -2,13 +2,13 @@ import Carousel from '../Carousel/Carousel';
 import Info from '../Info/Info';
 import Nav from '../Nav/Nav';
 import Search from '../Search/Search';
-import Cart from '../Cart/Cart';
+
 import Categories from '../Categories/Categories';
 import imageCarousel_1 from '../../images/for_slider/pexels-valeria-boltneva-1148084.jpg'
 import imageCarousel_5 from '../../images/for_slider/pose-eyes-fur-cat.jpg'
 import imageCarousel_6 from '../../images/for_slider/1621870607_20-oir_mobi-p-tolstaya-morda-kota-zhivotnie-krasivo-foto-27.jpg'
 
-function Main() {
+function Main({itemsCounter}) {
     return (
         <>
             <Carousel>
@@ -17,10 +17,11 @@ function Main() {
                 <img src={imageCarousel_6} alt='image_1' />
             </Carousel>
             <Info />
-            <Nav />
+            <Nav itemsCounter={itemsCounter}/>
             <Search />
-            <Categories />
-            <Cart />
+            <Categories itemsCounter={itemsCounter}
+            />
+            
         </>
     )
 }

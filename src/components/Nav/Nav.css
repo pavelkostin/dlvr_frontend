@@ -10,6 +10,13 @@
     display: flex;
     padding: 5px 0;
     justify-content: space-between;
+
+    position: relative;
+}
+
+.nav__container_cat {
+    justify-content: flex-start;
+    align-items: center;
 }
 
 @media screen and (max-width: 700px) {

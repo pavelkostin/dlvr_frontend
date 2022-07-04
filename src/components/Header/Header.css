@@ -2,6 +2,8 @@
     max-width: 100%;
     min-width: 320px;
     padding: 18px 0;
+
+    
 }
 
 .header-wrapper {
@@ -11,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .header-logo {
@@ -42,6 +45,7 @@
 
 .header-container {
     display: flex;
+
     
 }
 
@@ -92,11 +96,7 @@
     
 }
 
-.header-contacts-phone {
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .header-contacts-container {
     display: flex;
@@ -104,16 +104,6 @@
     align-items: center;
     padding: 0;
     margin: 0 20px;
-}
-
-.li_drop {
-    list-style: none;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
 }
 
 .header-contacts-container__submenu {
@@ -163,18 +153,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
-    .header-contacts-phone  {
-        background-image: url(../../images/phone1.svg);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 14px;
-        height: 14px;
-        color: white;
-        background-color:transparent;
-    }
-}
+
 
 .header-contacts-img {
     width: 20px;
@@ -189,15 +168,8 @@
     padding: 8px;
 }
 
-.header-contacts-img_phone {
-    width: 28px;
-    height: 28px;
-}
 
-.header-contacts-img_phone:hover {
-    opacity: 0.6;
-    cursor: pointer;
-}
+
 
 @media screen and (max-width: 600px) {
     .header-contacts-img_hidden {
@@ -221,4 +193,29 @@
     .header-contacts_visible {
         display: none;
     }
+}
+
+.header-phone-container {
+    position: relative;
+}
+
+.header-phone {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    background-color: grey;
+    margin-right: 10px;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.header-phone-img {
+    transition: opacity 0.3s ease-in-out;
+    width: 30px;
+    height: 30px;
+}
+
+.header-phone-img:hover  {
+    opacity: 0.6;
+    cursor: pointer;
 }

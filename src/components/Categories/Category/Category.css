@@ -6,6 +6,7 @@
 
 .category__img {
     max-width: 100%;
+    border-radius: 3px;
 }
 
 .category__img:hover {
@@ -14,11 +15,32 @@
 }
 
 .category__h3 {
-    margin-top: 5px;
-    color: grey;
+    margin: 0px 0 15px 0;
     font-weight: 400;
-    align-self: center;
-    font-size: 14px;
+    align-self: left;
+    font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
+    text-decoration: none;
+
+    color: grey;
+}
+
+.category__h3_black {
+    color: grey;
+    margin-top: 15px;
+}
+
+.category__h3_grey {
+    margin-left: 30px;
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1.3;
+    color: #282828;
+}
+
+.link {
+    text-decoration: none;
+    color: grey;
 }

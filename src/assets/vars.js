@@ -2,62 +2,38 @@
 export const CategoriesList = [
     {
         _id: 1,
-        name: 'Роллы',
+        name: 'cold',
+        nameRu: 'Холодные',
         link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg'
     },
     {
         _id: 2,
-        name: 'Пиццы',
+        name: 'pizza',
+        nameRu: 'Пицца',
         link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg'
     },
     {
         _id: 3,
-        name: 'Воки',
+        name: 'wok',
+        nameRu: 'Вок',
         link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg'
     },
     {
         _id: 4,
-        name: 'Напитки',
+        name: 'drinks',
+        nameRu: 'Напитки',
         link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg'
     },
     {
         _id: 5,
-        name: 'Дополнительно',
+        name: 'adds',
+        nameRu: 'Дополнительно',
         link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg'
     },
     {
         _id: 6,
-        name: 'Новинки',
-        link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg'
-    },
-    {
-        _id: 7,
-        name: 'Роллы',
-        link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg'
-    },
-    {
-        _id: 8,
-        name: 'Пиццы',
-        link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg'
-    },
-    {
-        _id: 9,
-        name: 'Воки',
-        link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg'
-    },
-    {
-        _id: 10,
-        name: 'Напитки',
-        link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg'
-    },
-    {
-        _id: 11,
-        name: 'Дополнительно',
-        link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg'
-    },
-    {
-        _id: 12,
-        name: 'Новинки',
+        name: 'news',
+        nameRu: 'Новинки',
         link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg'
     }
 ];
@@ -65,9 +41,9 @@ export const CategoriesList = [
 export const PromoList = [
     {
         _id: 1,
-        name: 'Дарим ролл "Калифорния" к первому заказу',
+        name: 'Калифорния в подарок',
         link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg',
-        text: 'Не заказывали у нас? Тогда дарим ролл "Калифорния" к первому заказу по промокоду. Нажмите на кнопку, и мы пришлем вам промокод на вкусный ролл'
+        text: 'Дарим ролл "Калифорния" к первому заказу. Не заказывали у нас? Тогда дарим ролл "Калифорния" к первому заказу по промокоду. Нажмите на кнопку, и мы пришлем вам промокод на вкусный ролл'
     },
     {
         _id: 2,
@@ -77,7 +53,7 @@ export const PromoList = [
     },
     {
         _id: 3,
-        name: 'Дарим ролл "Калифорния" к первому заказу',
+        name: 'Калифорния в подарок',
         link: 'https://dlvry.ru/upload/iblock/1c9/0v4a6364_2.jpg',
         text: 'Не заказывали у нас? Тогда дарим ролл "Калифорния" к первому заказу по промокоду. Нажмите на кнопку, и мы пришлем вам промокод на вкусный ролл'
     },
@@ -100,3 +76,81 @@ export const PromoList = [
         text: 'Не заказывали у нас? Тогда дарим ролл "Калифорния" к первому заказу по промокоду. Нажмите на кнопку, и мы пришлем вам промокод на вкусный ролл'
     }
 ];
+
+export const Goods = [
+    {
+        _id: 1,
+        category: 'cold',
+        nameCategoryRu: 'холодные',
+        name: 'Ролл Филадельфия с лососем',
+        link: 'https://dlvry.ru/upload/iblock/062/0v4a6391_2.jpg',
+        prize: 490,
+        weight: 290,
+        text: 'Филе лосося, сливочный сыр, огурец, рис, нори, чернила каракатицы, соус тонкацу.'
+    },
+    {
+        _id: 2,
+        category: 'cold',
+        nameCategoryRu: 'холодные',
+        name: 'Ролл Юта с лососем',
+        link: 'https://dlvry.ru/upload/iblock/7d0/product_1611007953_46_original.jpg',
+        prize: 490,
+        weight: 290,
+        text: 'Филе лосося, сливочный сыр, огурец, рис, нори, чернила каракатицы, соус тонкацу.'
+    },
+    {
+        _id: 3,
+        category: 'pizza',
+        nameCategoryRu: 'пицца',
+        name: 'Маргарита стандартная',
+        link: 'https://dlvry.ru/upload/resize_cache/iblock/1d6/900_900_1/margarita.jpg',
+        prize: 490,
+        weight: 290,
+        text: 'Филе лосося, сливочный сыр, огурец, рис, нори, чернила каракатицы, соус тонкацу.'
+    }/* ,
+    {
+        _id: 4,
+        category: 'pizza',
+        name: 'Маргарита стандартная',
+        link: 'https://dlvry.ru/upload/resize_cache/iblock/1d6/900_900_1/margarita.jpg',
+        prize: 490,
+        weight: 290,
+        text: 'Филе лосося, сливочный сыр, огурец, рис, нори, чернила каракатицы, соус тонкацу.'
+    },
+    {
+        _id: 5,
+        category: 'pizza',
+        name: 'Маргарита стандартная',
+        link: 'https://dlvry.ru/upload/resize_cache/iblock/1d6/900_900_1/margarita.jpg',
+        prize: 490,
+        weight: 290,
+        text: 'Филе лосося, сливочный сыр, огурец, рис, нори, чернила каракатицы, соус тонкацу.'
+    },
+    {
+        _id: 6,
+        category: 'pizza',
+        name: 'Маргарита стандартная',
+        link: 'https://dlvry.ru/upload/resize_cache/iblock/1d6/900_900_1/margarita.jpg',
+        prize: 490,
+        weight: 290,
+        text: 'Филе лосося, сливочный сыр, огурец, рис, нори, чернила каракатицы, соус тонкацу.'
+    },
+    {
+        _id: 7,
+        category: 'rolls',
+        name: 'Ролл Юта с лососем',
+        link: 'https://dlvry.ru/upload/iblock/7d0/product_1611007953_46_original.jpg',
+        prize: 490,
+        weight: 290,
+        text: 'Филе лосося, сливочный сыр, огурец, рис, нори, чернила каракатицы, соус тонкацу.'
+    },
+    {
+        _id: 8,
+        category: 'rolls',
+        name: 'Ролл Юта с лососем',
+        link: 'https://dlvry.ru/upload/iblock/7d0/product_1611007953_46_original.jpg',
+        prize: 490,
+        weight: 290,
+        text: 'Филе лосося, сливочный сыр, огурец, рис, нори, чернила каракатицы, соус тонкацу.'
+    } */
+]

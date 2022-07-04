@@ -4,12 +4,19 @@
     display: flex;
     padding: 18px 0;
     min-width: 320px;
+
+    position: relative;
+}
+
+.categories__wrapper {
+    display: flex;
+    flex-direction: column;
 }
 
 .categories-list {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    column-gap: 2px;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 17px;
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100%;
