@@ -1,0 +1,42 @@
+.navigation {
+    max-width: 100%;
+    min-width: 320px;
+    padding: 18px 0;
+
+    position: fixed;
+    right: 40%;
+    opacity: 0.7;
+    z-index: 2;
+
+}
+
+.navigation__wrapper {
+    max-width: 900px;
+    min-width: 320px;
+    margin: 0 auto;
+    justify-content: flex-end;
+    padding: 0;
+    color: white;
+}
+
+.navigation__item {
+    margin: 0;
+    padding: 0;
+    color: white;
+    z-index: 1;
+    font-weight: 400;
+    align-self: center;
+    font-size: 18px;
+    line-height: 18px;
+    font-style: normal;
+    text-decoration: none;
+
+
+}
+
+
+.navigation__item-img {
+    margin: 0;
+    padding: 0;
+    color: white;
+}

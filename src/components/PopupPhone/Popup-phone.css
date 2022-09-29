@@ -1,0 +1,20 @@
+
+.popup-phone {
+    position: absolute;
+    right: 50px;
+    top: 10px;
+    width: 130px;
+    background-color: grey;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.popup-phone-number {
+    color: white;
+    font-size: 14px;
+    padding-top: 2px;
+}

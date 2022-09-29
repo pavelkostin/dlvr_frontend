@@ -1,0 +1,36 @@
+.shop-list-item {
+    display: flex;
+    
+    flex-direction: column;
+    max-width: 200px;
+    height: 400px;
+    border: 1px solid green;
+}
+
+.shop-list-item__image {
+    max-width: 200px;
+    border-radius: 3px;
+}
+
+.shop-list-item__name {
+    max-width: 200px;
+}
+
+
+.shop-list-item__price {
+    max-width: 200px;
+}
+
+.promo-item__para {
+
+    
+    margin: 10px 0 0 0;
+    font-weight: 400;
+    text-align: left;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: grey;
+
+    text-decoration: none;
+}

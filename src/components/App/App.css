@@ -1,0 +1,32 @@
+.App {
+    font-family: 'Montserrat', 'Inter', sans-serif;
+    max-width: 100%;
+    min-width: 320px;
+    
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    /* background-color: rgba(28, 28, 28); */
+    background-color: #FFFAFA;
+
+    color: black;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    position: relative;
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+.page__container {
+    display: flex;
+    flex-direction: column;
+}
