@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import CartListItem from "../CartListItem/CartListItem";
-
+// привет
 const CartList = ({
     cartList,
     deletePhoneFromCart,
