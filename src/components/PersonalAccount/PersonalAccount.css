@@ -1,0 +1,18 @@
+
+
+
+
+.personal-orders  {
+
+    
+    border: 1px solid black;
+}
+
+.personal-orders__item {
+    border: 1px solid black;
+    
+}
+
+.personal-orders__item_bold {
+    font-weight: bold;
+}

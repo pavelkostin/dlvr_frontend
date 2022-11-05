@@ -5,6 +5,8 @@
 @import url(./components/Header/Header.css);
 @import url(./components/CartInfo/CartInfo.css);
 
+@import url(./components/Popup/Popup.css);
+
 @import url(./components/PopupPhone/Popup-phone.css);
 @import url(./components/Footer/Footer.css);
 @import url(./components/Carousel/Carousel.css);
@@ -18,6 +20,8 @@
 @import url(./components/CartList/CartList.css);
 @import url(./components/CartListItem/CartListItem.css);
 
+@import url(./components/PersonalAccount/PersonalAccount.css);
+
 
 
 .cart-list {
@@ -29,38 +33,3 @@
 .cart-list {
   display: block;
 }
-
-
-
-/* .button {
-  cursor: pointer;
-  position: relative;
-  margin-top: 10px;
-  width: 100%;
-  padding: 9px 0;
-  background-color: transparent;
-  border: 1px solid #c93756;
-  border-radius: 3rem;
-  color: #c93756;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.button-cart {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #ffb3a7;
-  border: none;
-  font-size: 23px;
-}
-
-.button:hover {
-  background-color: #c93756;
-  color: #fff;
-}
-
-
-.button-cart {
-  cursor: pointer;
-} */

@@ -1,12 +1,10 @@
 import React from 'react';
-import ShopListItem from '../ShopListItem/ShopListItem';
 import Product from '../Product/Product';
-import { Link } from 'react-router-dom';
 
 
 const ShopList = ({ phones, addPhoneInCart, cartList, deletePhoneFromCart }) => {
 
-
+  
   const [filter, setFilter] = React.useState('rolls');
   const [listOfGoods, setListOfGoods] = React.useState(phones);
 
@@ -21,13 +19,12 @@ const ShopList = ({ phones, addPhoneInCart, cartList, deletePhoneFromCart }) => 
 
   return (
     <>
-
       <div>
         <div className='nav__container'>
           <ul className='nav__cats-container'>
-            <div onClick={()=>{setFilter(isFilterRoll)}} className={`nav__cat ${filter === isFilterRoll ? 'nav__cat_active' : ''}`}>Роллы</div>
-            <div onClick={()=>{setFilter(isFilterPizza)}} className={`nav__cat ${filter === isFilterPizza ? 'nav__cat_active' : ''}`}>Пицца</div>
-            
+            <div onClick={() => { setFilter(isFilterRoll) }} className={`nav__cat ${filter === isFilterRoll ? 'nav__cat_active' : ''}`}>Роллы</div>
+            <div onClick={() => { setFilter(isFilterPizza) }} className={`nav__cat ${filter === isFilterPizza ? 'nav__cat_active' : ''}`}>Пицца</div>
+
           </ul>
         </div>
       </div>
@@ -47,7 +44,7 @@ const ShopList = ({ phones, addPhoneInCart, cartList, deletePhoneFromCart }) => 
                       addPhoneInCart={addPhoneInCart}
                       deletePhoneFromCart={deletePhoneFromCart}
                       cartList={cartList}
-
+                      
                     />
                   </li>
                 )

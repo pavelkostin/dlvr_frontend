@@ -38,6 +38,11 @@
     cursor: pointer;
 }
 
+.promo-item__img_promo {
+    width: 350px;
+    height: 350px;
+}
+
 .promo-item__h3 {
     font-weight: 600;
     align-self: left;
@@ -67,6 +72,8 @@
 
 .promo-item__btn {
 
+    display: flex;
+
     margin-top: 3px;
     background-color: grey;
     color: white;
@@ -79,6 +86,21 @@
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
+
+    text-decoration: none;
+
+}
+
+.promo-item__btn:hover {
+    cursor: pointer;
+}
+
+.promo-item__btn_popup-item {
+
+    font-size: 16px;
+    padding: 10px 15px;
+
+    max-width: 100%;
 
 }
 

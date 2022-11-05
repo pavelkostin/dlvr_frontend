@@ -63,6 +63,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    display: block;
 }
 
 .header-contacts-item:hover {
@@ -74,8 +76,8 @@
 }
 
 @media screen and (max-width: 600px) {
-    .header-contacts-item_hidden {
-        visibility: hidden;
+    .header-contacts-item {
+        display: none;
     }
 }
 
@@ -175,16 +177,16 @@
     background-color: grey;
     border-radius: 10px;
     padding: 8px;
+
+    display: none;
 }
-
-
-
 
 @media screen and (max-width: 600px) {
-    .header-contacts-img_hidden {
-        visibility: hidden;
+    .header-contacts-img {
+        display: block;
     }
 }
+
 
 @media screen and (max-width: 600px) {
     .header-contacts_hidden {
@@ -219,6 +221,7 @@
 }
 
 .header-phone-img {
+    background-color: grey;
     transition: opacity 0.3s ease-in-out;
     width: 30px;
     height: 30px;

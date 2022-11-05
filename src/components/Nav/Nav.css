@@ -138,3 +138,23 @@
 }
 
 
+.nav__container_auth {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    
+}
+
+.nav__input_lk {
+    margin: 0 0 30px;
+    
+}
+
+.nav__container_row {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+}
